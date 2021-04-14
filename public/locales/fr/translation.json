@@ -1,3 +1,10 @@
 {
-  "hello": "Bonjour"
+  "Hi 👋": "Bonjour 👋",
+  "welcome to my website!": "bienvenue sur mon site web",
+  "I am Filippo Finke, I come from Ticino": "Je m'appelle <br><span>Filippo Finke</span><br> et je viens du <span>Tessin</span>",
+  "I am a developer and computer security enthusiast": "je suis un développeur et un passionné de sécurité informatique",
+  "I often use": "j'utilise souvent",
+  "to create": "pour créer",
+  "stuff": "Sites web<br />Applications<br />Programmes",
+  "and whatever I can think of": "et tout ce à quoi je peux penser"
 }
