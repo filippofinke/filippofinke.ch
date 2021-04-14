@@ -1,0 +1,6 @@
+.section {
+  position: relative;
+  scroll-snap-align: center;
+  height: 100vh;
+  height: calc(100vh - var(--vh-offset, 0px));
+}

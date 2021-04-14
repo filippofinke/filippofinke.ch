@@ -1,0 +1,7 @@
+.container {
+    height: 100vh;
+    height: calc(100vh - var(--vh-offset, 0px));
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
