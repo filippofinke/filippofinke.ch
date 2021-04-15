@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
+import ContactsList from "./components/ContactsList";
 import Container from "./components/Container";
+import Footer from "./components/Footer";
 import LanguageSelector from "./components/LanguageSelector";
 import Section from "./components/Section";
 
@@ -48,6 +50,11 @@ const App = () => {
         </div>
         <br />
         <h2>{t("and whatever I can think of")}</h2>
+      </Section>
+      <Section>
+        <h2 style={{ position: "absolute", top: "20px" }}>{t("My contacts")}</h2>
+        <ContactsList />
+        <Footer />
       </Section>
     </Container>
   );
