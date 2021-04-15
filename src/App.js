@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ContactsList from "./components/ContactsList";
 import Container from "./components/Container";
@@ -9,12 +10,15 @@ import Section from "./components/Section";
 const App = () => {
   const { t } = useTranslation();
 
+  let [hasScrolled, setHasScrolled] = useState(false);
+
   return (
-    <Container>
+    <Container onScroll={() => setHasScrolled(true)}>
       <LanguageSelector />
       <Section>
         <h1>{t("Hi 👋")}</h1>
         <h2>{t("welcome to my website!")}</h2>
+        {!hasScrolled && <img className="scrolldown" alt="Scroll down" src="/assets/scrolldown.png" />}
       </Section>
       <Section>
         <h2 dangerouslySetInnerHTML={{ __html: t("I am Filippo Finke, I come from Ticino") }}></h2>

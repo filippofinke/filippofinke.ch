@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp -R public/locales build/locales",
+    "build": "react-scripts build && cp -R public/locales build/locales && cp -R public/assets build/assets",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

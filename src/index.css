@@ -68,3 +68,22 @@ a {
     font-size: 5.5vh;
   }
 }
+
+.scrolldown {
+  max-width: 12vh;
+  position: absolute;
+  bottom: 50px;
+  animation-name: move;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
