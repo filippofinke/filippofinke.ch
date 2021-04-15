@@ -1,0 +1,36 @@
+.button {
+  background: black;
+  color: white;
+  font-size: 3vh;
+  padding: 5px 20px;
+}
+
+.projects {
+  margin-top: 20px;
+  overflow-y: scroll;
+  text-align: center;
+  width: 100%;
+}
+
+.project {
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 60%;
+  border-left: 5px solid black;
+}
+
+.language {
+  color: white;
+  background: red;
+  padding: 5px;
+  font-size: 2vh;
+  position: absolute;
+  right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    max-width: 90%;
+  }
+}

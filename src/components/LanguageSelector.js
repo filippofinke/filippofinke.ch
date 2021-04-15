@@ -14,7 +14,7 @@ const LanguageSelector = () => {
               onClick={() => {
                 i18n.changeLanguage(l);
               }}
-              className={i18n.language === l ? "active" : ""}
+              className={(i18n.language ?? "en") === l ? "active" : ""}
             >
               {l.toUpperCase()}
             </li>

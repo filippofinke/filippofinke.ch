@@ -49,3 +49,22 @@ a {
   margin-top: 20px;
   padding: 10px;
 }
+
+.title {
+  margin-top: 2vh;
+}
+
+.projects-button {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 45px;
+  bottom: 0;
+  background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 5.5vh;
+  }
+}

@@ -3,6 +3,7 @@ import ContactsList from "./components/ContactsList";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 import LanguageSelector from "./components/LanguageSelector";
+import ProjectsList from "./components/ProjectsList";
 import Section from "./components/Section";
 
 const App = () => {
@@ -52,7 +53,20 @@ const App = () => {
         <h2>{t("and whatever I can think of")}</h2>
       </Section>
       <Section>
-        <h2 style={{ position: "absolute", top: "20px" }}>{t("My contacts")}</h2>
+        <div className="title">
+          <h2>{t("These are some projects")}</h2>
+        </div>
+        <ProjectsList />
+        <div className="projects-button">
+          <h2>
+            <a class="button" href="https://github.com/filippofinke?tab=repositories" target="_blank" rel="noreferrer">
+              {t("Show all")}
+            </a>
+          </h2>
+        </div>
+      </Section>
+      <Section>
+        <h2 className="title">{t("My contacts")}</h2>
         <ContactsList />
         <Footer />
       </Section>
