@@ -59,7 +59,7 @@ const App = () => {
         <ProjectsList />
         <div className="projects-button">
           <h2>
-            <a class="button" href="https://github.com/filippofinke?tab=repositories" target="_blank" rel="noreferrer">
+            <a className="button" href="https://github.com/filippofinke?tab=repositories" target="_blank" rel="noreferrer">
               {t("Show all")}
             </a>
           </h2>

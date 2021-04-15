@@ -28,7 +28,7 @@ const ContactsList = () => {
     <div>
       {contacts.map(({ name, username, url }) => {
         return (
-          <React.Fragment>
+          <React.Fragment key={name}>
             <br />
 
             <h3>
