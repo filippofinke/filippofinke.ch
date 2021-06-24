@@ -1,16 +1,16 @@
 .language-selector {
-  position: absolute;
-  bottom: 0px;
-  right: 20px;
-  z-index: 2;
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+	z-index: 2;
 }
 
 .language-selector li {
-  display: inline-block;
-  padding: 15px 5px;
-  cursor: pointer;
+	display: inline-block;
+	padding: 15px 5px;
+	cursor: pointer;
 }
 
 .language-selector .active {
-  color: red;
+	color: red;
 }

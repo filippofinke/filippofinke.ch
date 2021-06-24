@@ -5,10 +5,10 @@ import App from "./App";
 import "./i18n";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Suspense fallback="">
-      <App />
-    </Suspense>
-  </React.StrictMode>,
-  document.getElementById("root")
+	<React.StrictMode>
+		<Suspense fallback="">
+			<App />
+		</Suspense>
+	</React.StrictMode>,
+	document.getElementById("root")
 );

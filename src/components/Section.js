@@ -1,7 +1,7 @@
-import "./Section.css"
+import "./Section.css";
 
 const Section = ({ children }) => {
-  return <div className="section">{children}</div>;
+	return <div className="section">{children}</div>;
 };
 
 export default Section;
