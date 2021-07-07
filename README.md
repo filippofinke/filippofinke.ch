@@ -35,5 +35,5 @@ npm run build
 Give a ⭐️ if this project helped you!
 
 <a href="https://www.buymeacoffee.com/filippofinke">
-  <img src="https://github.com/filippofinke/filippofinke/raw/main/images/buymeacoffe.png" width="160" alt="Buy Me A McFlurry">
+  <img src="https://github.com/filippofinke/filippofinke/raw/main/images/buymeacoffe.png" alt="Buy Me A McFlurry">
 </a>
