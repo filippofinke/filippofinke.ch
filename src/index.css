@@ -8,6 +8,26 @@
   --selection-background-color: red;
 
   --background-color: white;
+  --text-color: black;
+
+  --language-selector-text-color: black;
+  --language-selector-text-color-active: red;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--highlight-background-color: #E8EAED;
+		--highlight-text-color: #202124;
+
+		--selection-text-color: #202124;
+		--selection-background-color: #202124;
+
+		--background-color: #202124;
+		--text-color: #E8EAED;
+
+		--language-selector-text-color: #E8EAED;
+		--language-selector-text-color-active: #448fff;
+	}
 }
 
 * {
@@ -96,5 +116,11 @@ a {
 	}
 	to {
 		transform: translateY(10px);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.scrolldown {
+		filter: invert(75%);
 	}
 }
