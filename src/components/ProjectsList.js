@@ -9,7 +9,9 @@ const ProjectsList = () => {
   const projectsQuery = useQuery(
     "projects",
     async () => {
-      let response = await fetch("https://api.github.com/users/filippofinke/starred?per_page=1000");
+      let response = await fetch(
+        "https://api.github.com/users/filippofinke/starred?per_page=1000"
+      );
       let repos = await response.json();
       repos = repos
         .filter((repo) => {
@@ -39,7 +41,12 @@ const ProjectsList = () => {
               <br />
               <p>{p.description || t("No description")}</p>
               <br />
-              <a className="button" href={p.html_url} target="_blank" rel="noreferrer">
+              <a
+                className="button"
+                href={p.html_url}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {t("Open")}
               </a>
             </div>

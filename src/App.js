@@ -18,10 +18,20 @@ const App = () => {
       <Section>
         <h1>{t("Hi 👋")}</h1>
         <h2>{t("welcome to my website!")}</h2>
-        {!hasScrolled && <img className="scrolldown" alt="Scroll down" src="/assets/scrolldown.png" />}
+        {!hasScrolled && (
+          <img
+            className="scrolldown"
+            alt="Scroll down"
+            src="/assets/scrolldown.png"
+          />
+        )}
       </Section>
       <Section>
-        <h2 dangerouslySetInnerHTML={{ __html: t("I am Filippo Finke, I come from Ticino") }}></h2>
+        <h2
+          dangerouslySetInnerHTML={{
+            __html: t("I am Filippo Finke, I come from Ticino"),
+          }}
+        ></h2>
       </Section>
       <Section>
         <h2>{t("I am a developer and computer security enthusiast")}</h2>
@@ -63,7 +73,12 @@ const App = () => {
         <ProjectsList />
         <div className="projects-button">
           <h2>
-            <a className="button" href="https://github.com/filippofinke?tab=repositories" target="_blank" rel="noreferrer">
+            <a
+              className="button"
+              href="https://github.com/filippofinke?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
               {t("Show all")}
             </a>
           </h2>
