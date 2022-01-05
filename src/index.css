@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 
+:root {
+  --highlight-background-color: black;
+  --highlight-text-color: white;
+
+  --selection-text-color: white;
+  --selection-background-color: red;
+
+  --background-color: white;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,6 +18,7 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	overflow: hidden;
+	background-color: var(--background-color);
 }
 
 h1 {
@@ -27,8 +38,8 @@ p {
 }
 
 span {
-	background-color: black;
-	color: white;
+	background-color: var(--highlight-background-color);
+	color: var(--highlight-text-color);
 	padding: 0 10px;
 }
 
@@ -37,15 +48,15 @@ a {
 }
 
 ::selection {
-	color: white !important;
-	background: red !important;
+	color: var(--selection-text-color) !important;
+	background: var(--selection-background-color) !important;
 	padding: 10px;
 }
 
 .box {
-	background-color: black;
+	background-color: var(--highlight-background-color);
 	width: 80%;
-	color: white;
+	color: var(--highlight-text-color);
 	margin-top: 20px;
 	padding: 10px;
 }
@@ -60,7 +71,7 @@ a {
 	width: 100%;
 	padding-bottom: 45px;
 	bottom: 0;
-	background-color: white;
+	background-color: var(--background-color);
 }
 
 @media screen and (max-width: 1000px) {

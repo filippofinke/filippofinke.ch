@@ -1,6 +1,6 @@
 .button {
-	background: black;
-	color: white;
+	background: var(--highlight-background-color);
+	color: var(--highlight-text-color);
 	font-size: 3vh;
 	padding: 5px 20px;
 }
@@ -17,12 +17,12 @@
 	margin: auto;
 	margin-bottom: 50px;
 	max-width: 60%;
-	border-left: 5px solid black;
+	border-left: 5px solid var(--highlight-background-color);
 }
 
 .language {
-	color: white;
-	background: red;
+	color: var(--background-color);
+	background: var(--selection-background-color);
 	padding: 5px;
 	font-size: 2vh;
 	position: absolute;

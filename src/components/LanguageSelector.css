@@ -12,5 +12,5 @@
 }
 
 .language-selector .active {
-	color: red;
+	color: var(--selection-background-color);
 }
