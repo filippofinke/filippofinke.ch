@@ -13,11 +13,6 @@ const ContactsList = () => {
       url: "https://www.linkedin.com/in/filippofinke/",
     },
     {
-      name: "Instagram",
-      username: "@filofinke",
-      url: "https://instagram.com/filofinke",
-    },
-    {
       name: "Email",
       username: "filippofinke@protonmail.ch",
       url: "mailto:filippofinke@protonmail.ch",
